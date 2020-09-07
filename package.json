@@ -1,6 +1,6 @@
 {
   "name": "handy-jest-matchers",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "src/index.js",
   "author": "Adrian Heng <adrianhyk@gmail.com>",
   "license": "MIT",

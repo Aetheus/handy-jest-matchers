@@ -13,6 +13,14 @@ function toObject(input) {
     }
 }
 
+function stripUndefined(input) {
+    for (let key in input) {
+        if (typeof input[key] === 'undefined') {
+            delete input[key];
+        }
+    }
+}
+
 module.exports = function (actual, expected) {
     let message;
     let pass = false;
@@ -20,17 +28,8 @@ module.exports = function (actual, expected) {
     const actualObject = toObject(actual);
     const expectedObject = toObject(expected);
 
-    for (let key in actualObject) {
-        if (!actualObject[key]) {
-            delete actualObject[key];
-        }
-    }
-
-    for (let key in expectedObject) {
-        if (!expectedObject[key]) {
-            delete expectedObject[key];
-        }
-    }
+    stripUndefined(actualObject);
+    stripUndefined(expectedObject);
 
     try {
         // TODO: clean this up
