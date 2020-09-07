@@ -32,8 +32,8 @@ module.exports = function (actual, expected) {
         }
     }
 
-    // return expect(actualObject).toMatchObject(expectedObject);
     try {
+        // TODO: clean this up
         expect(actualObject).toMatchObject(expectedObject);
         pass = true;
     } catch (e) {

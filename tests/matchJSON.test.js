@@ -1,6 +1,6 @@
-require('../src/setup');
-
 describe('matchJSON', () => {
+   // TODO: clean this up; add "not" tests
+
    describe('when used asymmetrically', () => {
       it('should match when input is JSON string and expected is an object', () => {
          const jsonString = JSON.stringify(

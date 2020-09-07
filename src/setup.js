@@ -1,5 +1,1 @@
-const { matchJSON } = require('./index');
-
-expect.extend({
-    matchJSON
-});
+expect.extend(require('./index'));
