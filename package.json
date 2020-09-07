@@ -7,6 +7,11 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./src/setup.js"
+    ]
+  },
   "devDependencies": {
     "jest": "^26.4.2"
   }
