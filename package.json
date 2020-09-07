@@ -1,0 +1,13 @@
+{
+  "name": "handy-jest-matchers",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Adrian Heng <adrianhyk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
